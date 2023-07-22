@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/contato', function () {
+    return view('site/contact');
+});   // o ideal é que tenha tudo no controle (http/controllers) essas rotas. A não ser a / que é bem simples
+
 Route::get('/', function () {
     return view('welcome');
 });
