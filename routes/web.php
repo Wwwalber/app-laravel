@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\{PublisherController};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/publisher',[PublisherController::class,'index'])->name('publisher.index');
 
 Route::get('/contato', function () {
     return view('site/contact');
