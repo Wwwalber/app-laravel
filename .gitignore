@@ -14,3 +14,8 @@ yarn-error.log
 /.idea
 /.vscode
 /.docker
+nbproject/private/private.xml
+nbproject/private/private.properties
+nbproject/private/config.properties
+nbproject/project.xml
+nbproject/project.properties
