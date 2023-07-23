@@ -31,7 +31,7 @@ services:
     db:
         image: mysql:5.7.22
         restart: unless-stopped
-        environment:
+        environment:            # vai buscar no .env
             MYSQL_DATABASE: ${DB_DATABASE:-laravel}
             MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root}
             MYSQL_PASSWORD: ${DB_PASSWORD:-userpass}
