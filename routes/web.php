@@ -1,22 +1,20 @@
 <?php
 
+use App\Http\Controllers\Admin\{SupportController}; //{}
+use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Site\SiteController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+//          url     classe controle lógica    pág. destino     referencia p/ rota
+Route::get('/supports',[SupportController::class,'index'])->name('supports.index');
+                                                        // permite mudar a chamada da rota na url, mas encaminha para o mesmo destino
 
-Route::get('/contato', function () {
-    return view('site/contact');
-});   // o ideal é que tenha tudo no controle (http/controllers) essas rotas. A não ser a / que é bem simples
+Route::get('/contatossite', [SiteController::class, 'contact']);
 
+Route::get('/contatoshome', [HomeController::class, 'contact']);
+
+Route::get('/teste', [TestController::class, 'testar']);
 Route::get('/', function () {
     return view('welcome');
 });

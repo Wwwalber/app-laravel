@@ -17,5 +17,6 @@ yarn-error.log
 nbproject/private/private.xml
 nbproject/private/private.properties
 nbproject/private/config.properties
+/nbproject/private/
 nbproject/project.xml
 nbproject/project.properties

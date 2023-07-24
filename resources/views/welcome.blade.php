@@ -16,7 +16,12 @@
         </style>
     </head>
     <body class="antialiased">
-        <h2 class="flex items-center justify-center rounded-full"><a href="/contato">Página contato</a></h2>
+        <h2 class="flex items-center justify-center rounded-full">
+            <a href="/teste">Página de teste</a></h2>
+        <h2 class="flex items-center justify-center rounded-full">
+            <a href="/contatossite">Página contato - site</a></h2>
+        <h2 class="flex items-center justify-center rounded-full">
+            <a href="/contatoshome">Página contato Home</a></h2>
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
