@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('editals', function (Blueprint $table) {
+        Schema::create('editais', function (Blueprint $table) {
             //pode ser personalizado
             $table->id();
             $table->string('numero_edital');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('editals');
+        Schema::dropIfExists('editais');
     }
 };

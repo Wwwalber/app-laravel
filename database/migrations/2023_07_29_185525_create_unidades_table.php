@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('editals', function (Blueprint $table) {
-            //pode ser personalizado
+        Schema::create('unidades', function (Blueprint $table) {
             $table->id();
-            $table->string('numero_edital');
-            $table->string('ano_str');
-            $table->year('ano');
-            $table->enum('status',['i','a','e']); // i=inscrições abertas, a=em andamento, e= encerrados
+            $table->string('nome_unidade');
+            $table->string('sigla_unidade');
             $table->timestamps();
         });
     }
@@ -27,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('editals');
+        Schema::dropIfExists('unidades');
     }
 };
