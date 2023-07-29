@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class UnidadeController extends Controller
 {
-    //
+    public function index(){
+        return view('site/unidade');
+    }
 }

@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\{PublisherController};
+use App\Http\Controllers\EditalController;
+use App\Http\Controllers\UnidadeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/get_unidades',[UnidadeController::class,'index'])->name('unidade.index');
+Route::get('/ver_editais',[EditalController::class,'index'])->name('edital.index');
+
 Route::get('/publisher',[PublisherController::class,'index'])->name('publisher.index');
 
 Route::get('/contato', function () {
