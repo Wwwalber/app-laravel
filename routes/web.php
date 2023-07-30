@@ -15,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/inscreva_se',[EditalController::class,'inscricoesAbertas'])->name('edital.inscricoesAbertas');
+
 Route::get('/get_unidades',[UnidadeController::class,'index'])->name('unidade.index');
+
 Route::get('/ver_editais',[EditalController::class,'index'])->name('edital.index');
 
 Route::get('/publisher',[PublisherController::class,'index'])->name('publisher.index');
